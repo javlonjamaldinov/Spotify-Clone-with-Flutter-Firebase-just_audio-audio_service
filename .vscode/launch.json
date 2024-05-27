@@ -1,0 +1,85 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Spotify-Clone-with-Flutter-Firebase-just_audio-audio_service",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "Spotify-Clone-with-Flutter-Firebase-just_audio-audio_service (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "Spotify-Clone-with-Flutter-Firebase-just_audio-audio_service (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "audio_handler",
+            "cwd": "packages\\audio_handler",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "audio_handler (profile mode)",
+            "cwd": "packages\\audio_handler",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "audio_handler (release mode)",
+            "cwd": "packages\\audio_handler",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "core",
+            "cwd": "packages\\core",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "core (profile mode)",
+            "cwd": "packages\\core",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "core (release mode)",
+            "cwd": "packages\\core",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "db_client",
+            "cwd": "packages\\db_client",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "db_client (profile mode)",
+            "cwd": "packages\\db_client",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "db_client (release mode)",
+            "cwd": "packages\\db_client",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

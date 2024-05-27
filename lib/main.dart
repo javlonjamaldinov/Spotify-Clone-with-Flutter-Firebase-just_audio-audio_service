@@ -5,18 +5,19 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'firebase_options.dart';
 import 'repositories/playlist_repository.dart';
 import 'screens/home/home_screen.dart';
 import 'state/audio_player/audio_player_bloc.dart';
 
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  
   await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
+    
   );
 
-  AudioHandler audioHandler = await initAudioService(
+  final audioHandler = await initAudioService(
     androidNotificationChannelId: 'com.example.beatsss',
     androidNotificationChannelName: 'Beatsss',
   );
@@ -34,10 +35,10 @@ void main() async {
 
 class MyApp extends StatelessWidget {
   const MyApp({
-    super.key,
+    Key? key,
     required this.audioHandler,
     required this.playlistRepository,
-  });
+  }) : super(key: key);
 
   final AudioHandler audioHandler;
   final PlaylistRepository playlistRepository;
@@ -69,11 +70,11 @@ class MyApp extends StatelessWidget {
               primary: Color(0xFF6BE394),
               onPrimary: Colors.black,
               secondary: Color(0xFFD0B797),
-              onSecondary: Color(0xffffffff),
+              onSecondary: Colors.white,
               error: Color(0xFF5e162e),
               onError: Color(0xFFf5e9ed),
               background: Colors.black,
-              onBackground: Color(0xFFffffff),
+              onBackground: Colors.white,
               surface: Colors.black87,
               onSurface: Color(0xFFf0fcf4),
             ),
